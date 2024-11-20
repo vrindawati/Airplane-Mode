@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Airport</title>
+</head>
+<body>
+    <h1>Select an Airport</h1>
+    <form method="GET">
+        <select name="airport" onchange="this.form.submit()">
+            <option value="">Select an Airport</option>
+            {% for airport in airports %}
+                <option value="{{ airport.name }}" {% if airport.name == selected_airport %}selected{% endif %}>
+                    {{ airport.name }}
+                </option>
+            {% endfor %}
+        </select>
+    </form>
+
+    {% if selected_airport %}
+        <h2>Available Shops in {{ selected_airport }}: {{ airport_shop_counts[selected_airport] }}</h2>
+    {% else %}
+        <h2>Select an airport to see available shops</h2>
+    {% endif %}
+</body>
+</html>

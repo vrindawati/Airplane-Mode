@@ -120,7 +120,13 @@ app_license = "mit"
 
 # Document Events
 # ---------------
-# Hook on document methods and events
+doc_events = {
+    "Airplane Ticket": {
+        "before_insert": "airplane_mode.airplane_mode.doctype.airplane_ticket.airplane_ticket.before_insert"
+    },
+}
+
+
 
 # doc_events = {
 # 	"*": {

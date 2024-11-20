@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-18 09:32:27.427717",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "rent_amount",
+  "rent_enable_remainder"
+ ],
+ "fields": [
+  {
+   "fieldname": "rent_amount",
+   "fieldtype": "Data",
+   "label": "Rent Amount"
+  },
+  {
+   "default": "0",
+   "fieldname": "rent_enable_remainder",
+   "fieldtype": "Check",
+   "label": "Rent Enable Remainder"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-11-18 09:34:12.429807",
+ "modified_by": "Administrator",
+ "module": "Airport Shop Management",
+ "name": "Shop Setting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
